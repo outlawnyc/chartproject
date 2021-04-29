@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="navstyle.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="splashspread.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="carousel.css" media="screen"/>
+
+</head>
+<body>
+
+<!--page block includes a navigation and a content block -->
+<div class="page">
+  <!--navigation-->
+  <nav class="nav">
+    <!--close button-->
+    <div class="nav__close"></div>
+    <!--navigation list-->
+    <ul class="nav__list">
+      <!--navigation item-->
+      <li class="nav__item">
+        <!--navigation link--><a class="nav__link" href="resume.html" title="home">home is where</a>
+      </li>
+      <!--navigation item-->
+      <li class="nav__item">
+        <!--navigation link--><a class="nav__link" href="https://www.outlawnyc.xyz/" title="nwc" target="_blank">no way cult</a>
+      </li>
+    </ul>
+  </nav>
+  <!--content part-->
+  <div class="page__content">
+    <!--open navigation button-->
+    <div class="nav-open-btn">
+      <div class="nav-open-btn__bar"></div>
+      <div class="nav-open-btn__bar"></div>
+      <div class="nav-open-btn__bar"></div>
+    </div>
+
+    <!--content block-->
+    <div class="content">
+
+  <div class="mySlides fade">
+
+  <img src="alienoutlaw12-copy.jpg" style="width:100%">
+
+
+</div>
+
+<div class="mySlides fade">
+  <img src="aliensnoutsmap.jpg" style="width:100%">
+
+  <div class="caption">
+    <span class="border">NWC_ONYC_2019</span><br>
+
+</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="anoflyerfront1.jpg" style="width:100%">
+
+</div>
+
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+
+</div>
+</div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+<!-- NAVIGATION JS-->
+<script class="jsnumbDisplay" src="navigation.js"></script>
+
+</body>
+</html>
+

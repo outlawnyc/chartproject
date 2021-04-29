@@ -1,0 +1,401 @@
+  body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("https://static.wixstatic.com/media/ad7eb1_9e28c8199dbd473a8755cce449910aae~mv2.jpg");
+  height: 700px;
+}
+
+.caption {
+  position: absolute;
+  left: 10px;
+  top: 5%;
+  width: 65%;
+  text-align: center;
+  color: $000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  opacity: 0.9;
+  padding: 8px;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: $111;
+}
+
+ .bgimg-1 img{
+    width:100%;
+    height: 100%;
+}
+
+.footer {
+  width: 100%;
+  height: 240px;
+  background-color: black
+}
+.footer .footerWrapper img {
+  margin-top: 17px;
+  margin-bottom: 14px
+  width: 20%;
+  height: 20%;
+}
+.footer .footerWrapper p {
+  font-size: 12px !important;
+  color: white;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-transform: uppercase;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  line-height: 18px
+}
+.footer .footerWrapper a {
+  color: white
+}
+.footer .footerWrapper h3 {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  font-family: "Arial", Arial, sans-serif;
+  text-transform: uppercase;
+  margin-top: 55px;
+  margin-bottom: 0 !important;
+  padding-bottom: 5px
+}
+.footer .footerWrapper .mailingList {
+  height: 48px;
+  position: relative
+}
+.footer .footerWrapper input {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: black !important;
+  background-color: #d1d1d1;
+  height: 48px;
+  max-width: 380px;
+  width: 100%;
+  border-radius: 15px;
+  text-align: center
+}
+.footer .footerWrapper input::placeholder {
+color:black
+}
+.footer .footerWrapper .footLinksWrap {
+  width: 100%;
+  margin-top: 25px;
+  float: right
+}
+.footer .footerWrapper .footLinksWrap .footLinksLeft {
+  width: 50%;
+  float: left
+}
+.footer .footerWrapper .footLinksWrap .footLinksLeft ul {
+  list-style-type: none;
+  text-align: right
+}
+.footer .footerWrapper .footLinksWrap .footLinksLeft ul li {
+  color: white;
+  font-size: 20px;
+  line-height: 32px;
+  text-transform: uppercase
+}
+.footer .footerWrapper .footLinksWrap .footLinksLeft ul li a {
+  color: white
+}
+.footer .footerWrapper .footLinksWrap .footLinksRight {
+  width: 50%;
+  float: right
+}
+.footer .footerWrapper .footLinksWrap .footLinksRight ul {
+  list-style-type: none;
+  text-align: left
+}
+.footer .footerWrapper .footLinksWrap .footLinksRight ul li {
+  color: white;
+  font-size: 20px;
+  line-height: 32px;
+  text-transform: uppercase
+}
+.footer .footerWrapper .footLinksWrap .footLinksRight ul li a {
+  color: white
+}
+.footMailbtn {
+  display: inline-block;
+  width: 100%;
+  max-width: 186px;
+  max-height: 48px;
+  min-height: 48px;
+  position: relative;
+  top: 5px;
+  left: 10px;
+  bottom: 0;
+  right: 0
+}
+.footMailbtn .img-top {
+  display: none;
+  position: absolute;
+  top: 1px
+}
+.footMailbtn:hover .img-top {
+  display: block
+}
+.btn-subscribe {
+  background-image: linear-gradient(#c5a7a5, #dfbfbd, #c5a7a5)
+}
+.btn-subscribe:hover {
+  background-image: linear-gradient(#b3b3b3, #f2f2f2, #b3b3b3)
+}
+
+@media only screen and (max-width: 1851px) {
+.footer .footerWrapper p {
+  font-size: 12px
+}
+.footer .footerWrapper input {
+  font-size: 18px;
+  width: 100% !important
+}
+.footer .footerWrapper .footLinksWrap .footLinksLeft ul li {
+  font-size: 20px
+}
+.footer .footerWrapper .footLinksWrap .footLinksRight ul li {
+  font-size: 20px
+}
+}
+
+@media only screen and (max-width: 1799px) {
+.footMailbtn:hover .img-top {
+  top: -16px
+}
+.footer {
+  height: auto
+}
+.footer .footerWrapper {
+  margin-bottom: 20px
+}
+.footer .footerWrapper h3 {
+  margin-top: 35px
+}
+.footer .footerWrapper .mailingList form {
+  margin: 0 auto
+}
+.footer .footerWrapper .mailingList form input {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px
+}
+.footer .footerWrapper .mailingList form .footMailbtn {
+  display: block;
+  left: auto;
+  display: block;
+  margin: 0 auto
+}
+}
+
+@media only screen and (max-width: 1525px) {
+.footMailbtn:hover .img-top {
+  top: -16px
+}
+.footer {
+  height: auto
+}
+.footer .footerWrapper {
+  margin-bottom: 20px
+}
+.footer .footerWrapper h3 {
+  margin-top: 35px
+}
+.footer .footerWrapper .mailingList form {
+  margin: 0 auto
+}
+.footer .footerWrapper .mailingList form input {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px
+}
+.footer .footerWrapper .mailingList form .footMailbtn {
+  display: block;
+  left: auto;
+  display: block;
+  margin: 0 auto
+}
+.footer .footerWrapper .footLinksWrap {
+  width: 100%
+}
+.footer .footerWrapper .footLinksWrap .footLinksLeft ul li {
+  font-size: 20px
+}
+.footer .footerWrapper .footLinksWrap .footLinksRight ul li {
+  font-size: 20px
+}
+}
+
+@media only screen and (max-width: 1308px) {
+.footMailbtn:hover .img-top {
+  top: 1px
+}
+.footer .container-fluid .footerWrapper h3 {
+  margin-bottom: 0
+}
+.footer .container-fluid .footerWrapper .row .col-lg-4 {
+  width: 100%
+}
+.footer .container-fluid .footerWrapper .row .col-lg-4 img {
+  margin: 30px auto 10px auto
+  width:100%;
+}
+.footer .container-fluid .footerWrapper .row .col-lg-4 p {
+  text-align: center;
+  font-size: 12px !important
+}
+.footer .container-fluid .footerWrapper .footLinksWrap {
+  max-width: 450px;
+  margin: 100px auto 0 auto;
+  float: none
+}
+.footer .container-fluid .footerWrapper .footLinksWrap .footLinksLeft ul {
+  text-align: center;
+  padding-left: 0
+}
+.footer .container-fluid .footerWrapper .footLinksWrap .footLinksRight ul {
+  text-align: center;
+  padding-left: 0
+}
+.footer .container-fluid .footerWrapper .mailingList {
+  margin: 0 auto
+}
+.footer .container-fluid .footerWrapper .mailingList form {
+  max-height: 48px;
+  margin: 0 auto;
+  max-width: 500px
+}
+.footer .container-fluid .footerWrapper .mailingList form input {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px
+}
+.footer .container-fluid .footerWrapper .mailingList form .footMailbtn {
+  display: block;
+  left: auto;
+  display: block;
+  margin: 0 auto
+}
+}
+
+@media only screen and (max-width: 767px) {
+.createAccount .accountTitle h3 {font-size: 5vw;}
+  
+.footMailbtn:hover .img-top {
+  top: -29px
+}
+.footer .container-fluid .footerWrapper .mailingList form .footMailbtn {
+  left: auto;
+  display: block;
+  margin: 0 auto
+}
+.footer .container-fluid .footerWrapper .footLinksWrap {
+  margin-top: 100px !important
+}
+.footer {
+  height: auto
+}
+.footer .footerWrapper .mailingList form {
+  margin: 0 auto
+}
+.footer .footerWrapper .mailingList form input {
+  display: block !important;
+  margin: 0 auto
+}
+.footer .footerWrapper .mailingList form .footMailbtn {
+  display: block !important;
+  margin: 0 auto
+}
+.footer .footerWrapper .footLinksWrap {
+  overflow: hidden
+}
+}
+
+@media only screen and (max-width: 436px) {
+.footer .container-fluid .footerWrapper .mailingList form .footMailbtn {
+  left: auto;
+  top: 5px;
+  display: block;
+  margin: 0 auto
+}
+.footer {
+  height: auto
+}
+.footer .footerWrapper .mailingList form {
+  margin: 0 auto
+}
+.footer .footerWrapper .mailingList form input {
+  font-size: 14px
+}
+.footer .footerWrapper .footLinksWrap .footLinksLeft {
+  float: left;
+  margin: 0 auto;
+  text-align: center
+}
+.footer .footerWrapper .footLinksWrap .footLinksLeft ul {
+  padding-left: 0
+}
+.footer .footerWrapper .footLinksWrap .footLinksRight {
+  float: none;
+  margin: 0 auto;
+  text-align: center
+}
+.footer .footerWrapper .footLinksWrap .footLinksRight ul {
+  padding-left: 0
+}
+}
+.col-xs-5ths, .col-sm-5ths, .col-md-5ths, .col-lg-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px
+}
+.col-xs-5ths {
+  width: 20%;
+  float: left
+}
+
+@media (min-width: 768px) {
+.col-sm-5ths {
+  width: 20%;
+  float: left
+}
+  .mobileVideoAd {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+.col-md-5ths {
+  width: 20%;
+  float: left
+}
+}
+
+@media (min-width: 1200px) {
+.col-lg-5ths {
+  width: 20%;
+  float: left
+}
+}
