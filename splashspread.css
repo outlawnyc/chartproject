@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+
+.row{
+    display:block;
+}
+
+.row div{
+    display:inline;
+}
+
+.clm {
+	float: left;
+	width: auto;
+	padding-top: 90px;
+		
+}
+
+.footerClm {
+	float: left;
+	width: auto;
+	background-color: #000;
+}
+
+.clm img {
+	height: 520px;
+}
+
+.div1 {
+	height: 50px;
+	width: 100%;
+	background-color: black;
+}
+
