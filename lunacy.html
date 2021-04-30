@@ -40,11 +40,10 @@
     <!--content block-->
     <div class="content">
 
-  <div class="mySlides fade">
+<div class="slideshow-container">
 
+<div class="mySlides fade">
   <img src="1.png" style="width:50%">
-
-
 </div>
 
 <div class="mySlides fade">
@@ -53,9 +52,9 @@
 
 <div class="mySlides fade">
   <img src="3.png" style="width:50%">
-</div>
-        
-  <div class="mySlides fade">
+</div> 
+
+<div class="mySlides fade">
   <img src="4.png" style="width:50%">
 </div>
 
@@ -65,7 +64,8 @@
 
 <div class="mySlides fade">
   <img src="6.png" style="width:50%">
-        </div>
+</div>
+
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -76,6 +76,9 @@
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
 </div>
 
 <script>
@@ -106,6 +109,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+
 
 <!-- NAVIGATION JS-->
 <script class="jsnumbDisplay" src="navigation.js"></script>
