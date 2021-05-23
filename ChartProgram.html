@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+	<meta charset = "utf-8">
+	<title>
+		Chart Program
+	</title>
+	<script>
+
+	function fillText () {
+
+			const x = 130,
+			y = 550,
+			space = 3.33;
+		// Locate the element "myCanvas" in the document
+		var canvas = document.getElementById("myCanvas");
+		var context = canvas.getContext("2d");
+		
+
+		context.font="20px Arial";
+		context.fillStyle = "black";
+
+		context.fillText("Chart Data:", 10, 35);
+	
+		
+		context.fillText(myObj.fruit[0].quantity, 43, 520 - (myObj.fruit[0].quantity * 10));
+		context.fillText(myObj.fruit[0].name, 30, 545 - (myObj.fruit[0].quantity * 10));
+		context.fillText(myObj.fruit[1].quantity, 43 + width, 520 - (myObj.fruit[1].quantity * 10));
+		context.fillText(myObj.fruit[1].name, 30 + width, 540 - (myObj.fruit[1].quantity * 10));
+		context.fillText(myObj.fruit[2].quantity, 43 + (width * 2), 520 - (myObj.fruit[2].quantity * 10));
+		context.fillText(myObj.fruit[2].name, 30 + (width * 2), 540 - (myObj.fruit[2].quantity * 10));
+		context.fillText(myObj.fruit[3].quantity, 43 + (width * 3), 520 - (myObj.fruit[3].quantity * 10));
+		context.fillText(myObj.fruit[3].name, 30 + (width * 3), 540 - (myObj.fruit[3].quantity * 10));
+		context.fillText(myObj.fruit[4].quantity, 43 + (width * 4), 520 - (myObj.fruit[4].quantity * 10));
+		context.fillText(myObj.fruit[4].name, 30 + (width * 4), 540 - (myObj.fruit[4].quantity * 10));
+		context.fillText(myObj.fruit[5].quantity, 43 + (width * 5), 520 - (myObj.fruit[5].quantity * 10));
+		context.fillText(myObj.fruit[5].name, 30 + (width * 5), 540 - (myObj.fruit[5].quantity * 10));
+		
+	}
+	document.addEventListener('DOMContentLoaded', fillText);
+</script>
+</head>
+<p id="demo"></p>
+
+<canvas id="myCanvas" width="800" height="550" style="border:1px solid #d3d3d3;">
+
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+
+
+<script>
+
+var fruit, i, x = "";
+
+var myObj = {
+	"fruit": [
+	{name:"Apple", quantity:20, color:"red"},
+	{name:"Orange", quantity:10, color:"orange"},
+	{name:"Banana", quantity:15, color:"yellow"},
+	{name:"Kiwi", quantity:3, color:"green"},
+	{name:"Blueberry", quantity:5, color:"blue"},
+	{name:"Grapes", quantity:8, color:"purple"}
+	]
+}
+</script>
+<script type="text/javascript">
+	const width = 133.33,
+			height = 550,
+			space = 3.33;
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "red";
+ctx.fillRect((width * 0), 550 - (myObj.fruit[0].quantity * 10), width, (myObj.fruit[0].quantity * 10));
+ctx.fillStyle = "orange";
+ctx.fillRect((width * 1), 550 -(myObj.fruit[1].quantity * 10), width, (myObj.fruit[1].quantity * 10));
+ctx.fillStyle = "yellow";
+ctx.fillRect((width * 2), 550 - (myObj.fruit[2].quantity * 10), width, (myObj.fruit[2].quantity * 10));
+ctx.fillStyle = "green";
+ctx.fillRect((width * 3), 550 - (myObj.fruit[3].quantity * 10), width, (myObj.fruit[3].quantity * 10));
+ctx.fillStyle = "blue";
+ctx.fillRect((width * 4), 550 - (myObj.fruit[4].quantity * 10), width, (myObj.fruit[4].quantity * 10));
+ctx.fillStyle = "purple";
+ctx.fillRect((width * 5), 550 - (myObj.fruit[5].quantity * 10), width, (myObj.fruit[5].quantity * 10));
+
+
+
+</script>
+
+
+
+</body>
+</html>
